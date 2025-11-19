@@ -321,7 +321,7 @@ What would you like to know more about?`;
 
   if (!detectionResult) {
     return (
-      <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl shadow-lg border-2 border-slate-200 p-8 text-center">
+      <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border-2 border-slate-200 p-8 text-center">
         <Bot className="h-16 w-16 text-slate-400 mx-auto mb-4" />
         <h3 className="text-xl font-bold text-slate-700 mb-2">AI Assistant Ready</h3>
         <p className="text-slate-600">
@@ -332,7 +332,7 @@ What would you like to know more about?`;
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden flex flex-col h-[600px]">
+    <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border-2 border-slate-200 overflow-hidden flex flex-col h-[600px]">
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <div className="bg-white/20 p-2 rounded-lg">

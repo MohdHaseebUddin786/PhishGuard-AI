@@ -49,7 +49,7 @@ export default function ThreatLevelBadge({ level, confidence }: ThreatLevelBadge
   const Icon = config.icon;
 
   return (
-    <div className={`${config.bgColor} ${config.borderColor} border-2 rounded-2xl p-6 shadow-lg`}>
+    <div className={`${config.bgColor} ${config.borderColor} border-2 rounded-2xl p-6 shadow-lg backdrop-blur-md bg-opacity-95`}>
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center space-x-3">
           <div className={`bg-gradient-to-br ${config.gradientFrom} ${config.gradientTo} p-3 rounded-xl shadow-md`}>

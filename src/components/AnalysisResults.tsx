@@ -14,7 +14,7 @@ export default function AnalysisResults({ result }: AnalysisResultsProps) {
       <ThreatLevelBadge level={threatLevel} confidence={confidence} />
 
       {redFlags.length > 0 && (
-        <div className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 p-6">
+        <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border-2 border-slate-200 p-6">
           <div className="flex items-center space-x-2 mb-4">
             <AlertCircle className="h-6 w-6 text-red-500" />
             <h3 className="text-xl font-bold text-slate-900">Red Flags Detected</h3>
@@ -35,7 +35,7 @@ export default function AnalysisResults({ result }: AnalysisResultsProps) {
         </div>
       )}
 
-      <div className="bg-white rounded-2xl shadow-lg border-2 border-slate-200 p-6">
+      <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border-2 border-slate-200 p-6">
         <h3 className="text-xl font-bold text-slate-900 mb-4">Detailed Analysis</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {analysis.spoofedSender !== undefined && (
