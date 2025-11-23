@@ -131,7 +131,7 @@ function App() {
       <footer className="bg-slate-900/95 backdrop-blur-sm text-white mt-16 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-slate-400 text-sm">
-            PhishGuard AI - Protecting users from phishing threats with advanced AI technology
+            PhishGuard AI - Protecting users from phishing threats with an advanced AI technology
           </p>
           <p className="text-slate-500 text-xs mt-2">
             Educational tool for cybersecurity awareness
