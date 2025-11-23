@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import { AnalysisResult, RiskLevel, ScanType, FileMetadata } from "../types";
+import { AnalysisResult, RiskLevel, ScanType, FileMetadata } from "../types/gemini";
 
 const getClient = () => {
   const apiKey = process.env.API_KEY;

@@ -1,24 +1,33 @@
-export type ThreatLevel = 'safe' | 'suspicious' | 'malicious';
+export enum RiskLevel {
+  SAFE = 'SAFE',
+  SUSPICIOUS = 'SUSPICIOUS',
+  MALICIOUS = 'MALICIOUS',
+}
 
-export interface DetectionResult {
-  threatLevel: ThreatLevel;
-  confidence: number;
+export enum ScanType {
+  URL = 'URL',
+  TEXT = 'TEXT',
+  FILE = 'FILE',
+}
+
+export interface AnalysisResult {
+  riskScore: number; // 0-100
+  riskLevel: RiskLevel;
+  summary: string;
   redFlags: string[];
-  analysis: {
-    spoofedSender?: boolean;
-    suspiciousLinks?: string[];
-    urgentLanguage?: boolean;
-    socialEngineering?: boolean;
-    misspelledDomains?: string[];
-    attachmentRisk?: boolean;
-  };
+  recommendation: string;
 }
 
 export interface ChatMessage {
   id: string;
-  role: 'user' | 'assistant';
-  content: string;
+  role: 'user' | 'model';
+  text: string;
   timestamp: Date;
 }
 
-export type DetectionType = 'url' | 'email' | 'sms' | 'file';
+export interface FileMetadata {
+  name: string;
+  size: number;
+  type: string;
+  lastModified: number;
+}
